@@ -29,11 +29,10 @@ APP.get('*' , (request , response) => {
     });
 });
 
-
+//database connection
+connection();
 
 //listening to port
 APP.listen(PORT,() => {
-    //database connection
-    connection();
     console.log(`backend successfully running at ${PORT}`);
 });
