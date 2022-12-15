@@ -12,7 +12,6 @@ const __dirname = path.dirname(__filename);
 //environment variables setup
 dotenv.config();
 const PORT = process.env.PORT;
-const dbURL = process.env.mongoDB_URL;
 
 //express App setup
 const APP = express();
@@ -31,16 +30,9 @@ APP.get('*' , (request , response) => {
 });
 
 //database connection
-const connection = function()
-{
-    mongoose.set('strictQuery' , false);
-    mongoose.connect(dbURL).then(() => {
-        console.log("database successfully connected");
-        //listening to port
-        APP.listen(PORT,() => {
-            console.log(`backend successfully running at ${PORT}`);
+connection().then(() => {
+    //listening to port after connection
+    APP.listen(PORT,() => {
+        console.log(`backend successfully running at ${PORT}`);
+    });
 });
-    }).catch(()=>{
-        console.log("error in database connection")
-    })
-}
