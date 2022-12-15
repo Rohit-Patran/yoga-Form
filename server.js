@@ -30,9 +30,16 @@ APP.get('*' , (request , response) => {
 });
 
 //database connection
-connection();
-
-//listening to port
-APP.listen(PORT,() => {
-    console.log(`backend successfully running at ${PORT}`);
+const connection = function()
+{
+    mongoose.set('strictQuery' , false);
+    mongoose.connect(dbURL).then(() => {
+        console.log("database successfully connected");
+        //listening to port
+        APP.listen(PORT,() => {
+            console.log(`backend successfully running at ${PORT}`);
 });
+    }).catch(()=>{
+        console.log("error in database connection")
+    })
+}
