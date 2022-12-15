@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename);
 //environment variables setup
 dotenv.config();
 const PORT = process.env.PORT;
+const dbURL = process.env.mongoDB_URL;
 
 //express App setup
 const APP = express();
