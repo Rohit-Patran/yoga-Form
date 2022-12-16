@@ -6,6 +6,7 @@ const DB_URI = process.env.MONGODB_URI;
 //database connnection
 const connection = async function()
 {
+    mongoose.set('strictQuery', true);
     await mongoose.connect(String(DB_URI)).then(() => {
         console.log("database successfully connected");
     }).catch((error)=>{
