@@ -8,5 +8,5 @@ const yogaUserSCHEMA = new mongoose.Schema({
     batch:{type:String , required:true}
 },{versionKey : false} , {timestamps : false});
 
-const USER = mongoose.model("yogaUsers" , yogaUserSCHEMA);
+const USER = mongoose.model("yogausers" , yogaUserSCHEMA);
 export { USER as default }
