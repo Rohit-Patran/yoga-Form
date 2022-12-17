@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 //environment variables setup
 dotenv.config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 //express App setup
 const APP = express();
