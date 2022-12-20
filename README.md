@@ -42,3 +42,7 @@ Form to accept user data for joining Yoga Program
 
 ## MongoDB Atlas Data Storage
 ![DB](https://user-images.githubusercontent.com/90060873/208734440-7c9dbbe8-84f9-4f61-a77e-3ac8e219a731.PNG)
+
+<ins>NOTE</ins>:<br />
+<ins>1. ALL USER INPUT HAS BEEN TAKEN THROUGH A SINGLE FORM ONLY</ins><br />
+<ins>2. AMOUNT HAS BEEN SET TO NON_EDITABLE AND KEPT SAME FOR ANY MONTH AND HAS BEEN SET TO DEFAULT Rs.500</ins>
