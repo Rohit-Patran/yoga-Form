@@ -1,5 +1,5 @@
-# yoga-Form
-Form to accept user data for joining Yoga Program
+# HealYoga
+A full stack web app to accept user data and save it cloud database
 
 ## <ins>Tech Stack Used</ins>
 ###### Frontend: 
